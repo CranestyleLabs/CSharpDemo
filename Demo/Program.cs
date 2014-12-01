@@ -34,8 +34,6 @@ namespace Demo
         public Wind Wind { get; set; }
         [DataMember(Name = "dt")]
         public int Dt { get; set; }
-
-
     }
 
     [DataContract]
