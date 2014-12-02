@@ -36,6 +36,7 @@ namespace WeatherService
             }
             catch (Exception e)
             {
+                Console.WriteLine("lalala");
                 Console.WriteLine(e.Message);
                 return null;
             }

@@ -9,7 +9,7 @@ using System.Runtime.Serialization.Json;
 namespace WeatherService
 {
     [DataContract]
-    public class Response
+    public class Weather
     {
         [DataMember(Name = "base")]
         public string Base { get; set; }
@@ -19,6 +19,8 @@ namespace WeatherService
         public int StatusCode { get; set; }
         [DataMember(Name = "coord")]
         public Coord Coord { get; set; }
+        [DataMember(Name = "dt")]
+        public int Dt { get; set; }
         [DataMember(Name = "id")]
         public int Id { get; set; }
         [DataMember(Name = "main")]
@@ -28,11 +30,9 @@ namespace WeatherService
         [DataMember(Name = "sys")]
         public Sys Sys { get; set; }
         [DataMember(Name = "weather")]
-        public List<Weather> Weathers { get; set; }
+        public List<Info> Infos { get; set; }
         [DataMember(Name = "wind")]
         public Wind Wind { get; set; }
-        [DataMember(Name = "dt")]
-        public int Dt { get; set; }
     }
 
     [DataContract]
@@ -78,7 +78,7 @@ namespace WeatherService
     }
 
     [DataContract]
-    public class Weather
+    public class Info
     {
         [DataMember(Name = "description")]
         public string Description { get; set; }
