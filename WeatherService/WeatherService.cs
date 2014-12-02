@@ -14,12 +14,17 @@ namespace WeatherService
     {
         public Weather GetWeather(string city)
         {
-            string requestUrl = @"http://api.openweathermap.org/data/2.5/weather?q=San%20francisco";
+            string requestUrl = CreateRequest(city);
             Weather response = MakeRequest(requestUrl);
             return response;
         }
 
-        public static Weather MakeRequest(string requestUrl)
+        public string CreateRequest(string city)
+        {
+            return "http://api.openweathermap.org/data/2.5/weather?q=" + city;
+        }
+
+        public Weather MakeRequest(string requestUrl)
         {
             try
             {
@@ -28,15 +33,19 @@ namespace WeatherService
                 {
                     if (response.StatusCode != HttpStatusCode.OK)
                         throw new Exception(String.Format("Server error {0}.", response.StatusCode));
+                    
                     DataContractJsonSerializer jsonSerializer = new DataContractJsonSerializer(typeof(Weather));
                     object objResponse = jsonSerializer.ReadObject(response.GetResponseStream());
                     Weather jsonResponse = objResponse as Weather;
-                    return jsonResponse;
+
+                    if (jsonResponse.StatusCode == 404)
+                        throw new Exception(String.Format("City Not Found"));
+                    else
+                        return jsonResponse;
                 }
             }
             catch (Exception e)
             {
-                Console.WriteLine("lalala");
                 Console.WriteLine(e.Message);
                 return null;
             }

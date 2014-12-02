@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WeatherClientDemo.ServiceReference1 {
+namespace WeatherClientDemo.WeatherService {
     using System.Runtime.Serialization;
     using System;
     
@@ -26,13 +26,13 @@ namespace WeatherClientDemo.ServiceReference1 {
         private string baseField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WeatherClientDemo.ServiceReference1.Clouds cloudsField;
+        private WeatherClientDemo.WeatherService.Clouds cloudsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int codField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WeatherClientDemo.ServiceReference1.Coord coordField;
+        private WeatherClientDemo.WeatherService.Coord coordField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int dtField;
@@ -41,19 +41,19 @@ namespace WeatherClientDemo.ServiceReference1 {
         private int idField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WeatherClientDemo.ServiceReference1.Main mainField;
+        private WeatherClientDemo.WeatherService.Main mainField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string nameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WeatherClientDemo.ServiceReference1.Sys sysField;
+        private WeatherClientDemo.WeatherService.Sys sysField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WeatherClientDemo.ServiceReference1.Info[] weatherField;
+        private WeatherClientDemo.WeatherService.Info[] weatherField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WeatherClientDemo.ServiceReference1.Wind windField;
+        private WeatherClientDemo.WeatherService.Wind windField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -79,7 +79,7 @@ namespace WeatherClientDemo.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public WeatherClientDemo.ServiceReference1.Clouds clouds {
+        public WeatherClientDemo.WeatherService.Clouds clouds {
             get {
                 return this.cloudsField;
             }
@@ -105,7 +105,7 @@ namespace WeatherClientDemo.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public WeatherClientDemo.ServiceReference1.Coord coord {
+        public WeatherClientDemo.WeatherService.Coord coord {
             get {
                 return this.coordField;
             }
@@ -144,7 +144,7 @@ namespace WeatherClientDemo.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public WeatherClientDemo.ServiceReference1.Main main {
+        public WeatherClientDemo.WeatherService.Main main {
             get {
                 return this.mainField;
             }
@@ -170,7 +170,7 @@ namespace WeatherClientDemo.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public WeatherClientDemo.ServiceReference1.Sys sys {
+        public WeatherClientDemo.WeatherService.Sys sys {
             get {
                 return this.sysField;
             }
@@ -183,7 +183,7 @@ namespace WeatherClientDemo.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public WeatherClientDemo.ServiceReference1.Info[] weather {
+        public WeatherClientDemo.WeatherService.Info[] weather {
             get {
                 return this.weatherField;
             }
@@ -196,7 +196,7 @@ namespace WeatherClientDemo.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public WeatherClientDemo.ServiceReference1.Wind wind {
+        public WeatherClientDemo.WeatherService.Wind wind {
             get {
                 return this.windField;
             }
@@ -713,23 +713,23 @@ namespace WeatherClientDemo.ServiceReference1 {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IWeatherService")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="WeatherService.IWeatherService")]
     public interface IWeatherService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWeatherService/GetWeather", ReplyAction="http://tempuri.org/IWeatherService/GetWeatherResponse")]
-        WeatherClientDemo.ServiceReference1.Weather GetWeather(string city);
+        WeatherClientDemo.WeatherService.Weather GetWeather(string city);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWeatherService/GetWeather", ReplyAction="http://tempuri.org/IWeatherService/GetWeatherResponse")]
-        System.Threading.Tasks.Task<WeatherClientDemo.ServiceReference1.Weather> GetWeatherAsync(string city);
+        System.Threading.Tasks.Task<WeatherClientDemo.WeatherService.Weather> GetWeatherAsync(string city);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IWeatherServiceChannel : WeatherClientDemo.ServiceReference1.IWeatherService, System.ServiceModel.IClientChannel {
+    public interface IWeatherServiceChannel : WeatherClientDemo.WeatherService.IWeatherService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class WeatherServiceClient : System.ServiceModel.ClientBase<WeatherClientDemo.ServiceReference1.IWeatherService>, WeatherClientDemo.ServiceReference1.IWeatherService {
+    public partial class WeatherServiceClient : System.ServiceModel.ClientBase<WeatherClientDemo.WeatherService.IWeatherService>, WeatherClientDemo.WeatherService.IWeatherService {
         
         public WeatherServiceClient() {
         }
@@ -750,11 +750,11 @@ namespace WeatherClientDemo.ServiceReference1 {
                 base(binding, remoteAddress) {
         }
         
-        public WeatherClientDemo.ServiceReference1.Weather GetWeather(string city) {
+        public WeatherClientDemo.WeatherService.Weather GetWeather(string city) {
             return base.Channel.GetWeather(city);
         }
         
-        public System.Threading.Tasks.Task<WeatherClientDemo.ServiceReference1.Weather> GetWeatherAsync(string city) {
+        public System.Threading.Tasks.Task<WeatherClientDemo.WeatherService.Weather> GetWeatherAsync(string city) {
             return base.Channel.GetWeatherAsync(city);
         }
     }
