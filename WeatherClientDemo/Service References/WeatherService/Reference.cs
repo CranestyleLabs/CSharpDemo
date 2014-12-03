@@ -23,37 +23,37 @@ namespace WeatherClientDemo.WeatherService {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string baseField;
+        private string BaseField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WeatherClientDemo.WeatherService.Clouds cloudsField;
+        private WeatherClientDemo.WeatherService.Clouds CloudField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int codField;
+        private WeatherClientDemo.WeatherService.Coord CoordField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WeatherClientDemo.WeatherService.Coord coordField;
+        private int DtField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int dtField;
+        private int IDField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int idField;
+        private WeatherClientDemo.WeatherService.Info[] InfosField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WeatherClientDemo.WeatherService.Main mainField;
+        private WeatherClientDemo.WeatherService.Main MainField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string nameField;
+        private string NameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WeatherClientDemo.WeatherService.Sys sysField;
+        private int StatusCodeField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WeatherClientDemo.WeatherService.Info[] weatherField;
+        private WeatherClientDemo.WeatherService.Sys SysField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WeatherClientDemo.WeatherService.Wind windField;
+        private WeatherClientDemo.WeatherService.Wind WindField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -66,144 +66,144 @@ namespace WeatherClientDemo.WeatherService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string @base {
+        public string Base {
             get {
-                return this.baseField;
+                return this.BaseField;
             }
             set {
-                if ((object.ReferenceEquals(this.baseField, value) != true)) {
-                    this.baseField = value;
-                    this.RaisePropertyChanged("base");
+                if ((object.ReferenceEquals(this.BaseField, value) != true)) {
+                    this.BaseField = value;
+                    this.RaisePropertyChanged("Base");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public WeatherClientDemo.WeatherService.Clouds clouds {
+        public WeatherClientDemo.WeatherService.Clouds Cloud {
             get {
-                return this.cloudsField;
+                return this.CloudField;
             }
             set {
-                if ((object.ReferenceEquals(this.cloudsField, value) != true)) {
-                    this.cloudsField = value;
-                    this.RaisePropertyChanged("clouds");
+                if ((object.ReferenceEquals(this.CloudField, value) != true)) {
+                    this.CloudField = value;
+                    this.RaisePropertyChanged("Cloud");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int cod {
+        public WeatherClientDemo.WeatherService.Coord Coord {
             get {
-                return this.codField;
+                return this.CoordField;
             }
             set {
-                if ((this.codField.Equals(value) != true)) {
-                    this.codField = value;
-                    this.RaisePropertyChanged("cod");
+                if ((object.ReferenceEquals(this.CoordField, value) != true)) {
+                    this.CoordField = value;
+                    this.RaisePropertyChanged("Coord");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public WeatherClientDemo.WeatherService.Coord coord {
+        public int Dt {
             get {
-                return this.coordField;
+                return this.DtField;
             }
             set {
-                if ((object.ReferenceEquals(this.coordField, value) != true)) {
-                    this.coordField = value;
-                    this.RaisePropertyChanged("coord");
+                if ((this.DtField.Equals(value) != true)) {
+                    this.DtField = value;
+                    this.RaisePropertyChanged("Dt");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int dt {
+        public int ID {
             get {
-                return this.dtField;
+                return this.IDField;
             }
             set {
-                if ((this.dtField.Equals(value) != true)) {
-                    this.dtField = value;
-                    this.RaisePropertyChanged("dt");
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int id {
+        public WeatherClientDemo.WeatherService.Info[] Infos {
             get {
-                return this.idField;
+                return this.InfosField;
             }
             set {
-                if ((this.idField.Equals(value) != true)) {
-                    this.idField = value;
-                    this.RaisePropertyChanged("id");
+                if ((object.ReferenceEquals(this.InfosField, value) != true)) {
+                    this.InfosField = value;
+                    this.RaisePropertyChanged("Infos");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public WeatherClientDemo.WeatherService.Main main {
+        public WeatherClientDemo.WeatherService.Main Main {
             get {
-                return this.mainField;
+                return this.MainField;
             }
             set {
-                if ((object.ReferenceEquals(this.mainField, value) != true)) {
-                    this.mainField = value;
-                    this.RaisePropertyChanged("main");
+                if ((object.ReferenceEquals(this.MainField, value) != true)) {
+                    this.MainField = value;
+                    this.RaisePropertyChanged("Main");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string name {
+        public string Name {
             get {
-                return this.nameField;
+                return this.NameField;
             }
             set {
-                if ((object.ReferenceEquals(this.nameField, value) != true)) {
-                    this.nameField = value;
-                    this.RaisePropertyChanged("name");
+                if ((object.ReferenceEquals(this.NameField, value) != true)) {
+                    this.NameField = value;
+                    this.RaisePropertyChanged("Name");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public WeatherClientDemo.WeatherService.Sys sys {
+        public int StatusCode {
             get {
-                return this.sysField;
+                return this.StatusCodeField;
             }
             set {
-                if ((object.ReferenceEquals(this.sysField, value) != true)) {
-                    this.sysField = value;
-                    this.RaisePropertyChanged("sys");
+                if ((this.StatusCodeField.Equals(value) != true)) {
+                    this.StatusCodeField = value;
+                    this.RaisePropertyChanged("StatusCode");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public WeatherClientDemo.WeatherService.Info[] weather {
+        public WeatherClientDemo.WeatherService.Sys Sys {
             get {
-                return this.weatherField;
+                return this.SysField;
             }
             set {
-                if ((object.ReferenceEquals(this.weatherField, value) != true)) {
-                    this.weatherField = value;
-                    this.RaisePropertyChanged("weather");
+                if ((object.ReferenceEquals(this.SysField, value) != true)) {
+                    this.SysField = value;
+                    this.RaisePropertyChanged("Sys");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public WeatherClientDemo.WeatherService.Wind wind {
+        public WeatherClientDemo.WeatherService.Wind Wind {
             get {
-                return this.windField;
+                return this.WindField;
             }
             set {
-                if ((object.ReferenceEquals(this.windField, value) != true)) {
-                    this.windField = value;
-                    this.RaisePropertyChanged("wind");
+                if ((object.ReferenceEquals(this.WindField, value) != true)) {
+                    this.WindField = value;
+                    this.RaisePropertyChanged("Wind");
                 }
             }
         }
@@ -228,7 +228,7 @@ namespace WeatherClientDemo.WeatherService {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int allField;
+        private int AllField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -241,14 +241,14 @@ namespace WeatherClientDemo.WeatherService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int all {
+        public int All {
             get {
-                return this.allField;
+                return this.AllField;
             }
             set {
-                if ((this.allField.Equals(value) != true)) {
-                    this.allField = value;
-                    this.RaisePropertyChanged("all");
+                if ((this.AllField.Equals(value) != true)) {
+                    this.AllField = value;
+                    this.RaisePropertyChanged("All");
                 }
             }
         }
@@ -273,10 +273,10 @@ namespace WeatherClientDemo.WeatherService {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private double latField;
+        private double LatField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private double lonField;
+        private double LonField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -289,27 +289,27 @@ namespace WeatherClientDemo.WeatherService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public double lat {
+        public double Lat {
             get {
-                return this.latField;
+                return this.LatField;
             }
             set {
-                if ((this.latField.Equals(value) != true)) {
-                    this.latField = value;
-                    this.RaisePropertyChanged("lat");
+                if ((this.LatField.Equals(value) != true)) {
+                    this.LatField = value;
+                    this.RaisePropertyChanged("Lat");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public double lon {
+        public double Lon {
             get {
-                return this.lonField;
+                return this.LonField;
             }
             set {
-                if ((this.lonField.Equals(value) != true)) {
-                    this.lonField = value;
-                    this.RaisePropertyChanged("lon");
+                if ((this.LonField.Equals(value) != true)) {
+                    this.LonField = value;
+                    this.RaisePropertyChanged("Lon");
                 }
             }
         }
@@ -334,19 +334,19 @@ namespace WeatherClientDemo.WeatherService {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int humidityField;
+        private int HumidityField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int pressureField;
+        private int PressureField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private double tempField;
+        private double TempField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private double temp_maxField;
+        private double Temp_maxField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private double temp_minField;
+        private double Temp_minField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -359,66 +359,66 @@ namespace WeatherClientDemo.WeatherService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int humidity {
+        public int Humidity {
             get {
-                return this.humidityField;
+                return this.HumidityField;
             }
             set {
-                if ((this.humidityField.Equals(value) != true)) {
-                    this.humidityField = value;
-                    this.RaisePropertyChanged("humidity");
+                if ((this.HumidityField.Equals(value) != true)) {
+                    this.HumidityField = value;
+                    this.RaisePropertyChanged("Humidity");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int pressure {
+        public int Pressure {
             get {
-                return this.pressureField;
+                return this.PressureField;
             }
             set {
-                if ((this.pressureField.Equals(value) != true)) {
-                    this.pressureField = value;
-                    this.RaisePropertyChanged("pressure");
+                if ((this.PressureField.Equals(value) != true)) {
+                    this.PressureField = value;
+                    this.RaisePropertyChanged("Pressure");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public double temp {
+        public double Temp {
             get {
-                return this.tempField;
+                return this.TempField;
             }
             set {
-                if ((this.tempField.Equals(value) != true)) {
-                    this.tempField = value;
-                    this.RaisePropertyChanged("temp");
+                if ((this.TempField.Equals(value) != true)) {
+                    this.TempField = value;
+                    this.RaisePropertyChanged("Temp");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public double temp_max {
+        public double Temp_max {
             get {
-                return this.temp_maxField;
+                return this.Temp_maxField;
             }
             set {
-                if ((this.temp_maxField.Equals(value) != true)) {
-                    this.temp_maxField = value;
-                    this.RaisePropertyChanged("temp_max");
+                if ((this.Temp_maxField.Equals(value) != true)) {
+                    this.Temp_maxField = value;
+                    this.RaisePropertyChanged("Temp_max");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public double temp_min {
+        public double Temp_min {
             get {
-                return this.temp_minField;
+                return this.Temp_minField;
             }
             set {
-                if ((this.temp_minField.Equals(value) != true)) {
-                    this.temp_minField = value;
-                    this.RaisePropertyChanged("temp_min");
+                if ((this.Temp_minField.Equals(value) != true)) {
+                    this.Temp_minField = value;
+                    this.RaisePropertyChanged("Temp_min");
                 }
             }
         }
@@ -443,22 +443,22 @@ namespace WeatherClientDemo.WeatherService {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string countryField;
+        private string CountryField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int idField;
+        private int IDField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private double messageField;
+        private double MessageField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int sunriseField;
+        private int SunriseField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int sunsetField;
+        private int SunsetField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int typeField;
+        private int TypeField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -471,79 +471,79 @@ namespace WeatherClientDemo.WeatherService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string country {
+        public string Country {
             get {
-                return this.countryField;
+                return this.CountryField;
             }
             set {
-                if ((object.ReferenceEquals(this.countryField, value) != true)) {
-                    this.countryField = value;
-                    this.RaisePropertyChanged("country");
+                if ((object.ReferenceEquals(this.CountryField, value) != true)) {
+                    this.CountryField = value;
+                    this.RaisePropertyChanged("Country");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int id {
+        public int ID {
             get {
-                return this.idField;
+                return this.IDField;
             }
             set {
-                if ((this.idField.Equals(value) != true)) {
-                    this.idField = value;
-                    this.RaisePropertyChanged("id");
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public double message {
+        public double Message {
             get {
-                return this.messageField;
+                return this.MessageField;
             }
             set {
-                if ((this.messageField.Equals(value) != true)) {
-                    this.messageField = value;
-                    this.RaisePropertyChanged("message");
+                if ((this.MessageField.Equals(value) != true)) {
+                    this.MessageField = value;
+                    this.RaisePropertyChanged("Message");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int sunrise {
+        public int Sunrise {
             get {
-                return this.sunriseField;
+                return this.SunriseField;
             }
             set {
-                if ((this.sunriseField.Equals(value) != true)) {
-                    this.sunriseField = value;
-                    this.RaisePropertyChanged("sunrise");
+                if ((this.SunriseField.Equals(value) != true)) {
+                    this.SunriseField = value;
+                    this.RaisePropertyChanged("Sunrise");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int sunset {
+        public int Sunset {
             get {
-                return this.sunsetField;
+                return this.SunsetField;
             }
             set {
-                if ((this.sunsetField.Equals(value) != true)) {
-                    this.sunsetField = value;
-                    this.RaisePropertyChanged("sunset");
+                if ((this.SunsetField.Equals(value) != true)) {
+                    this.SunsetField = value;
+                    this.RaisePropertyChanged("Sunset");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int type {
+        public int Type {
             get {
-                return this.typeField;
+                return this.TypeField;
             }
             set {
-                if ((this.typeField.Equals(value) != true)) {
-                    this.typeField = value;
-                    this.RaisePropertyChanged("type");
+                if ((this.TypeField.Equals(value) != true)) {
+                    this.TypeField = value;
+                    this.RaisePropertyChanged("Type");
                 }
             }
         }
@@ -568,10 +568,10 @@ namespace WeatherClientDemo.WeatherService {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private double degField;
+        private double DegField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private double speedField;
+        private double SpeedField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -584,27 +584,27 @@ namespace WeatherClientDemo.WeatherService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public double deg {
+        public double Deg {
             get {
-                return this.degField;
+                return this.DegField;
             }
             set {
-                if ((this.degField.Equals(value) != true)) {
-                    this.degField = value;
-                    this.RaisePropertyChanged("deg");
+                if ((this.DegField.Equals(value) != true)) {
+                    this.DegField = value;
+                    this.RaisePropertyChanged("Deg");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public double speed {
+        public double Speed {
             get {
-                return this.speedField;
+                return this.SpeedField;
             }
             set {
-                if ((this.speedField.Equals(value) != true)) {
-                    this.speedField = value;
-                    this.RaisePropertyChanged("speed");
+                if ((this.SpeedField.Equals(value) != true)) {
+                    this.SpeedField = value;
+                    this.RaisePropertyChanged("Speed");
                 }
             }
         }
@@ -629,16 +629,16 @@ namespace WeatherClientDemo.WeatherService {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string descriptionField;
+        private string DescriptionField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string iconField;
+        private string IconField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int idField;
+        private int IdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string mainField;
+        private string MainField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -651,53 +651,53 @@ namespace WeatherClientDemo.WeatherService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string description {
+        public string Description {
             get {
-                return this.descriptionField;
+                return this.DescriptionField;
             }
             set {
-                if ((object.ReferenceEquals(this.descriptionField, value) != true)) {
-                    this.descriptionField = value;
-                    this.RaisePropertyChanged("description");
+                if ((object.ReferenceEquals(this.DescriptionField, value) != true)) {
+                    this.DescriptionField = value;
+                    this.RaisePropertyChanged("Description");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string icon {
+        public string Icon {
             get {
-                return this.iconField;
+                return this.IconField;
             }
             set {
-                if ((object.ReferenceEquals(this.iconField, value) != true)) {
-                    this.iconField = value;
-                    this.RaisePropertyChanged("icon");
+                if ((object.ReferenceEquals(this.IconField, value) != true)) {
+                    this.IconField = value;
+                    this.RaisePropertyChanged("Icon");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int id {
+        public int Id {
             get {
-                return this.idField;
+                return this.IdField;
             }
             set {
-                if ((this.idField.Equals(value) != true)) {
-                    this.idField = value;
-                    this.RaisePropertyChanged("id");
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string main {
+        public string Main {
             get {
-                return this.mainField;
+                return this.MainField;
             }
             set {
-                if ((object.ReferenceEquals(this.mainField, value) != true)) {
-                    this.mainField = value;
-                    this.RaisePropertyChanged("main");
+                if ((object.ReferenceEquals(this.MainField, value) != true)) {
+                    this.MainField = value;
+                    this.RaisePropertyChanged("Main");
                 }
             }
         }

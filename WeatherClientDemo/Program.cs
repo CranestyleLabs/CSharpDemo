@@ -19,10 +19,11 @@ namespace WeatherClientDemo
 
             if (weather != null)
             {
-                Console.WriteLine("Weather for city : {0}", weather.name);
-                Console.WriteLine("Temperature : {0}", weather.main.temp);
-                Console.WriteLine("Presure : {0}", weather.main.pressure);
-                Console.WriteLine("Humidity : {0}", weather.main.humidity);
+                Console.WriteLine("Weather for city : {0}", weather.Name);
+                Console.WriteLine("Temperature : {0}", weather.Main.Temp);
+                Console.WriteLine("Presure : {0}", weather.Main.Pressure);
+                Console.WriteLine("Humidity : {0}", weather.Main.Humidity);
+                Console.WriteLine(weather.Infos[0].Description);
             } 
             else
             {

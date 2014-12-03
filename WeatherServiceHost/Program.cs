@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ServiceModel;
+using WeatherService;
+
 
 namespace WeatherServiceHost
 {
@@ -16,7 +18,7 @@ namespace WeatherServiceHost
                 host.Open();
                 Console.WriteLine("Host Started at {0}", DateTime.Now);
                 Console.ReadKey();
-            }
+            } 
         }
     }
 }
