@@ -13,8 +13,10 @@ namespace WeatherServiceHost
     {
         static void Main(string[] args)
         {
+            // Create Service Host
             using(ServiceHost host = new ServiceHost(typeof(WeatherService.WeatherService)))
             {
+                // Start Service
                 host.Open();
                 Console.WriteLine("Host Started at {0}", DateTime.Now);
                 Console.ReadKey();

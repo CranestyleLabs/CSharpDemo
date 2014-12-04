@@ -23,7 +23,7 @@ namespace WeatherClientDemo
                 Console.WriteLine("Temperature : {0}", weather.Main.Temp);
                 Console.WriteLine("Presure : {0}", weather.Main.Pressure);
                 Console.WriteLine("Humidity : {0}", weather.Main.Humidity);
-                Console.WriteLine(weather.Infos[0].Description);
+                Console.WriteLine("Description : {0}", weather.Infos[0].Description);
             } 
             else
             {
